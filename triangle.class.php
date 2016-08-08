@@ -25,7 +25,7 @@ class Triangle extends Shape
                 $this->side2 = $_POST["side2"];
                 $this->side3 = $_POST["side3"];
             } else {
-                echo '<font color="red">三角形的两边之和要大于第三边</font>';
+                echo '<font color="red">三角形的两边之和要大于第三边</font><br>';
             }
         }
     }

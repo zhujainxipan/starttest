@@ -11,9 +11,20 @@ class Form
     private $action;
     private $shape;
 
-    function __construct($action)
+    function __construct($action = "")
     {
         $this->action = $action;
+        $this->shape = isset($_GET["action"]) ? $_GET["action"] : "rect";
+    }
+
+    function __toString()
+    {
+        $form = '<form action="' . $this->action . '?action=' . $this->shape . '"method="post">';
+        $shape = "get" . ucfirst($this->shape);
+        $form .= $this->$shape();
+        $form .= '<br><input type="submit" name="sub" value="计算"<br> ';
+        $form .= '</form>';
+        return $form;
     }
 
 
