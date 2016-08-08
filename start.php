@@ -207,6 +207,24 @@ $arr1 = array(
 
 echo "ID".$arr1["周报"][1]."<br>";
 
+?>
+
+<?php
+$contact = array(
+    array(1, "高某", "A公司", "4353535", "rerer@qq.com"),
+    array(1, "高某", "A公司", "4353535", "rerer@qq.com"),
+    array(1, "高某", "A公司", "4353535", "rerer@qq.com"),
+    array(1, "高某", "A公司", "4353535", "rerer@qq.com")
+);
+
+// 输出二位数组中的每个元素
+for ($raw = 0; $raw < count($contact); $raw++) {
+    for ($col = 0; $col < count($contact[$raw]); $col++) {
+        echo " ".$contact[$raw][$col]." ";
+    }
+    echo "<br>";
+}
+
 
 ?>
 
