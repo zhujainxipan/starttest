@@ -168,9 +168,35 @@ foreach ($contact as $raw) {
     }
     echo "<br>";
 }
-
-
 ?>
+
+// 面对对象版图形计算器
+<center>
+    <h1>图形（周长&面积）计算器</h1>
+    <a href="start.php?action=rect">矩形</a>||
+    <a href="start.php?action=triangle">三角形</a>||
+    <a href="start.php?action=circle">圆形</a>
+    <hr>
+
+    <?php
+    /**
+     * 通过魔术方法去自动加载所需要的类文件，将需要的类包含进来
+     * @param $className
+     */
+    function __autoload($className)
+    {
+        include strtolower($className) . ".class.php";
+    }
+
+    // 输出用户需要的表单
+    echo new Form("start.php");
+    // 如果用户提交表单则去计算
+    if (isset($_POST["sub"])) {
+        echo new Result();
+    }
+    ?>
+
+</center>
 
 
 </body>
