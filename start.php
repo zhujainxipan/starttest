@@ -178,7 +178,7 @@ $a = 1;
 $b = 2;
 if ($a > $b) {
     echo "$a > $b<br>";
-} elseif($a == $b) {
+} elseif ($a == $b) {
     echo "$a == $b<br>";
 } else {
     echo "$a < $b<br>";
@@ -189,7 +189,8 @@ if ($a > $b) {
  * @param int $a
  * @param int $b
  */
-function add($a, $b) {
+function add($a, $b)
+{
     $a = 1;
     $b = 2;
 }
@@ -205,7 +206,7 @@ $arr1 = array(
     )
 );
 
-echo "ID".$arr1["周报"][1]."<br>";
+echo "ID" . $arr1["周报"][1] . "<br>";
 
 ?>
 
@@ -220,7 +221,17 @@ $contact = array(
 // 输出二位数组中的每个元素
 for ($raw = 0; $raw < count($contact); $raw++) {
     for ($col = 0; $col < count($contact[$raw]); $col++) {
-        echo " ".$contact[$raw][$col]." ";
+        echo " " . $contact[$raw][$col] . " ";
+    }
+    echo "<br>";
+}
+
+// foreach测试
+echo "<br>";
+
+foreach ($contact as $raw) {
+    foreach ($raw as $col) {
+        echo " " . $col . " ";
     }
     echo "<br>";
 }
