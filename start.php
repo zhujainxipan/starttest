@@ -184,9 +184,17 @@ if ($a > $b) {
     echo "$a < $b<br>";
 }
 
-
 // php的函数应用
+/**
+ * @param int $a
+ * @param int $b
+ */
+function add($a, $b) {
+    $a = 1;
+    $b = 2;
+}
 
+sort()
 
 
 ?>
