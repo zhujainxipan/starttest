@@ -25,9 +25,11 @@
       <file leaf-file-name="start.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/start.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33534744">
-              <caret line="228" column="12" selection-start-line="228" selection-start-column="3" selection-end-line="228" selection-end-column="12" />
-              <folding />
+            <state vertical-scroll-proportion="0.19939578">
+              <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+              <folding>
+                <element signature="e#1215#1230#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -160,9 +162,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/start.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33534744">
-          <caret line="228" column="12" selection-start-line="228" selection-start-column="3" selection-end-line="228" selection-end-column="12" />
-          <folding />
+        <state vertical-scroll-proportion="0.19939578">
+          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding>
+            <element signature="e#1215#1230#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
