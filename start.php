@@ -196,6 +196,13 @@ foreach ($contact as $raw) {
     }
     ?>
 
+
+    <?php
+    require "calendar.class.php";
+    echo new Calendar();
+    ?>
+
+
 </center>
 
 
