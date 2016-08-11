@@ -396,8 +396,22 @@ foreach ($contact as $raw) {
         echo '插入数据失败<br>';
     }
 
+    // 查询数据
+    $query = "SELECT bookname, author, publisher, price, detail FROM book";
+    $queryResult = mysql_query($query);
+    echo '<table>';
+    while ($row = mysql_fetch_row($queryResult)) {
+        echo '<tr>';
+        foreach ($row as $data) {
+            echo '<td>' . $data . '</td>';
+        }
+        echo '</tr>';
+    }
+    echo '</table>';
 
-    mysql_close();
+    mysql_free_result($queryResult);
+
+    mysql_close($link);
     ?>
 
 
