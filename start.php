@@ -198,9 +198,170 @@ foreach ($contact as $raw) {
 
 
     <?php
+    // php时间日期相关api的使用
     require "calendar.class.php";
     echo new Calendar();
     ?>
+
+    <?php
+    // php文件处理相关
+    function getFilePro($fileName)
+    {
+        if (!file_exists($fileName)) {
+            echo "目标文件不存在<br>";
+            return;
+        }
+
+        if (is_file($fileName)) {
+            echo $fileName . "是一个文件<br>";
+        }
+
+        if (is_dir($fileName)) {
+            echo $fileName . "是一个目录<br>";
+        }
+
+        if (is_readable($fileName)) {
+            echo $fileName . "文件可读<br>";
+        }
+
+        if (is_writable($fileName)) {
+            echo $fileName . "文件可写<br>";
+        }
+
+        if (is_executable($fileName)) {
+            echo $fileName . "文件可执行<br>";
+        }
+
+        echo "文件建立时间：" . date("Y 年 m 月 j日", filectime($fileName)) . "<br>";
+        echo "文件最后改动时间：" . date("Y 年 m 月 j日", filemtime($fileName)) . "<br>";
+        echo "文件最后打开时间：" . date("Y 年 m 月 j日", fileatime($fileName)) . "<br>";
+        echo "文件形态" . getFileType($fileName) . "<br>";
+        echo "文件大小" . getFileSize(filesize($fileName)) . "<br>";
+    }
+
+
+    function getFileType($fileName)
+    {
+        switch (filetype($fileName)) {
+            case 'file':
+                $type .= "普通文件";
+                break;
+            case 'dir':
+                $type .= "目录文件";
+                break;
+            case 'block':
+                $type .= "块设备文件";
+                break;
+            case 'char':
+                $type .= "字符设备文件";
+                break;
+            case 'fifo':
+                $type .= "命名管道文件";
+                break;
+            case 'link':
+                $type .= "符号链接";
+                break;
+            case 'unknow':
+                $type .= "未知类型";
+                break;
+            default:
+                $type .= "没有检测到类型";
+        }
+        return $type;
+    }
+
+    function getFileSize($bytes)
+    {
+        if ($bytes >= pow(2, 40)) {
+            $return = round($bytes / pow(1024, 4), 2);
+            $suffix = "TB";
+        } elseif ($bytes >= pow(2, 30)) {
+            $return = round($bytes / pow(1024, 3), 2);
+            $suffix = "GB";
+        } elseif ($bytes >= pow(2, 20)) {
+            $return = round($bytes / pow(1024, 2), 2);
+            $suffix = "MB";
+        } elseif ($bytes >= pow(2, 10)) {
+            $return = round($bytes / pow(1024, 1), 2);
+            $suffix = "KB";
+        } else {
+            $return = $bytes;
+            $suffix = "Byte";
+        }
+        return $return . " " . $suffix;
+    }
+
+    getFilePro("start.php");
+
+    ?>
+
+    // php网络留言板
+    <p>网络留言板</p>
+    <?php
+    $fileName = "text_data.txt";
+    if (isset($_POST["sub1"])) {
+        $message = $_POST["username"] . "||" . $_POST["title"] . "||" . $_POST["mess"] . "<|>";
+        writeMessage($fileName, $message);
+    }
+
+    if (file_exists($fileName)) {
+        readMessage($fileName);
+    }
+
+    function writeMessage($fileName, $message)
+    {
+        $fp = fopen($fileName, "a");
+        if (flock($fp, LOCK_EX)) {
+            fwrite($fp, $message);
+            flock($fp, LOCK_UN);
+        } else {
+            echo "不能锁定文件！";
+        }
+        fclose($fp);
+    }
+
+
+    function readMessage($fileName)
+    {
+        $fp = fopen($fileName, "r");
+        flock($fp, LOCK_SH);
+        $buffer = "";
+        while (!feof($fp)) {
+            $buffer .= fread($fp, 1024);
+        }
+
+        $data = explode("<|>", $buffer);
+
+        foreach ($data as $line) {
+            list($username, $title, $message) = explode("||", $line);
+            if ($username != "" && $title != "" && $message != "") {
+                echo $username . '说';
+                echo '&nbsp;' . $title . ",";
+                echo $message . "<hr>";
+            }
+        }
+
+        flock($fp, LOCK_UN);
+        fclose($fp);
+    }
+
+
+    ?>
+    <!--以下为用户输入表单界面-->
+    <form action="" method="post">
+        用户名：<input type="text" size=30 name="username"><br>
+        标题:<input type="text" size=30 name="title"><br>
+        <textarea name="mess" rows="4" cols="38">请在这里输入留言信息</textarea>
+        <input type="submit" name="sub1" value="留言">
+    </form>
+
+    <p>文件上传测试</p>
+
+    <form action="upload.php" method="post" enctype="multipart/form-data">
+        <input type="hidden" name="MAX_FILE_SIZE" value="1000000">
+        选择文件：<input type="file" name="myfile">
+        <input type="submit" value="上传文件">
+    </form>
 
 
 </center>
