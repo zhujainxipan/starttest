@@ -25,15 +25,17 @@
       <file leaf-file-name="start.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/start.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.46827793">
-              <caret line="410" column="0" selection-start-line="410" selection-start-column="0" selection-end-line="410" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.13595167">
+              <caret line="445" column="9" selection-start-line="445" selection-start-column="9" selection-end-line="445" selection-end-column="9" />
               <folding>
                 <element signature="e#1215#1230#0#PHP" expanded="true" />
-                <marker date="1470903718000" expanded="true" signature="8285:8362" placeholder="INSERT INTO ..." />
-                <marker date="1470903718000" expanded="true" signature="8285:8407" placeholder="INSERT INTO ..." />
-                <marker date="1470903718000" expanded="true" signature="8291:8360" placeholder="insert into ..." />
-                <marker date="1470903718000" expanded="true" signature="8598:8652" placeholder="SELECT bookn..." />
-                <marker date="1470903718000" expanded="true" signature="8598:8657" placeholder="SELECT bookn..book..." />
+                <marker date="1470905808000" expanded="true" signature="8285:8362" placeholder="INSERT INTO ..." />
+                <marker date="1470905808000" expanded="true" signature="8285:8407" placeholder="INSERT INTO ..." />
+                <marker date="1470905808000" expanded="true" signature="8291:8360" placeholder="insert into ..." />
+                <marker date="1470905808000" expanded="true" signature="8598:8652" placeholder="SELECT bookn..." />
+                <marker date="1470905808000" expanded="true" signature="8598:8657" placeholder="SELECT bookn..book..." />
+                <marker date="1470905808000" expanded="true" signature="9313:9435" placeholder="INSERT INTO ..." />
+                <marker date="1470905808000" expanded="true" signature="9623:9682" placeholder="SELECT bookn..book..." />
               </folding>
             </state>
           </provider>
@@ -207,11 +209,13 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#1215#1230#0#PHP" expanded="true" />
-            <marker date="1470903718000" expanded="true" signature="8285:8362" placeholder="INSERT INTO ..." />
-            <marker date="1470903718000" expanded="true" signature="8285:8407" placeholder="INSERT INTO ..." />
-            <marker date="1470903718000" expanded="true" signature="8291:8360" placeholder="insert into ..." />
-            <marker date="1470903718000" expanded="true" signature="8598:8652" placeholder="SELECT bookn..." />
-            <marker date="1470903718000" expanded="true" signature="8598:8657" placeholder="SELECT bookn..book..." />
+            <marker date="1470905808000" expanded="true" signature="8285:8362" placeholder="INSERT INTO ..." />
+            <marker date="1470905808000" expanded="true" signature="8285:8407" placeholder="INSERT INTO ..." />
+            <marker date="1470905808000" expanded="true" signature="8291:8360" placeholder="insert into ..." />
+            <marker date="1470905808000" expanded="true" signature="8598:8652" placeholder="SELECT bookn..." />
+            <marker date="1470905808000" expanded="true" signature="8598:8657" placeholder="SELECT bookn..book..." />
+            <marker date="1470905808000" expanded="true" signature="9313:9435" placeholder="INSERT INTO ..." />
+            <marker date="1470905808000" expanded="true" signature="9623:9682" placeholder="SELECT bookn..book..." />
           </folding>
         </state>
       </provider>
@@ -222,11 +226,13 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#1215#1230#0#PHP" expanded="true" />
-            <marker date="1470903718000" expanded="true" signature="8285:8362" placeholder="INSERT INTO ..." />
-            <marker date="1470903718000" expanded="true" signature="8285:8407" placeholder="INSERT INTO ..." />
-            <marker date="1470903718000" expanded="true" signature="8291:8360" placeholder="insert into ..." />
-            <marker date="1470903718000" expanded="true" signature="8598:8652" placeholder="SELECT bookn..." />
-            <marker date="1470903718000" expanded="true" signature="8598:8657" placeholder="SELECT bookn..book..." />
+            <marker date="1470905808000" expanded="true" signature="8285:8362" placeholder="INSERT INTO ..." />
+            <marker date="1470905808000" expanded="true" signature="8285:8407" placeholder="INSERT INTO ..." />
+            <marker date="1470905808000" expanded="true" signature="8291:8360" placeholder="insert into ..." />
+            <marker date="1470905808000" expanded="true" signature="8598:8652" placeholder="SELECT bookn..." />
+            <marker date="1470905808000" expanded="true" signature="8598:8657" placeholder="SELECT bookn..book..." />
+            <marker date="1470905808000" expanded="true" signature="9313:9435" placeholder="INSERT INTO ..." />
+            <marker date="1470905808000" expanded="true" signature="9623:9682" placeholder="SELECT bookn..book..." />
           </folding>
         </state>
       </provider>
@@ -237,11 +243,13 @@
           <caret line="201" column="16" selection-start-line="201" selection-start-column="16" selection-end-line="201" selection-end-column="16" />
           <folding>
             <element signature="e#1215#1230#0#PHP" expanded="true" />
-            <marker date="1470903718000" expanded="true" signature="8285:8362" placeholder="INSERT INTO ..." />
-            <marker date="1470903718000" expanded="true" signature="8285:8407" placeholder="INSERT INTO ..." />
-            <marker date="1470903718000" expanded="true" signature="8291:8360" placeholder="insert into ..." />
-            <marker date="1470903718000" expanded="true" signature="8598:8652" placeholder="SELECT bookn..." />
-            <marker date="1470903718000" expanded="true" signature="8598:8657" placeholder="SELECT bookn..book..." />
+            <marker date="1470905808000" expanded="true" signature="8285:8362" placeholder="INSERT INTO ..." />
+            <marker date="1470905808000" expanded="true" signature="8285:8407" placeholder="INSERT INTO ..." />
+            <marker date="1470905808000" expanded="true" signature="8291:8360" placeholder="insert into ..." />
+            <marker date="1470905808000" expanded="true" signature="8598:8652" placeholder="SELECT bookn..." />
+            <marker date="1470905808000" expanded="true" signature="8598:8657" placeholder="SELECT bookn..book..." />
+            <marker date="1470905808000" expanded="true" signature="9313:9435" placeholder="INSERT INTO ..." />
+            <marker date="1470905808000" expanded="true" signature="9623:9682" placeholder="SELECT bookn..book..." />
           </folding>
         </state>
       </provider>
@@ -411,15 +419,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/start.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46827793">
-          <caret line="410" column="0" selection-start-line="410" selection-start-column="0" selection-end-line="410" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.13595167">
+          <caret line="445" column="9" selection-start-line="445" selection-start-column="9" selection-end-line="445" selection-end-column="9" />
           <folding>
             <element signature="e#1215#1230#0#PHP" expanded="true" />
-            <marker date="1470903718000" expanded="true" signature="8285:8362" placeholder="INSERT INTO ..." />
-            <marker date="1470903718000" expanded="true" signature="8285:8407" placeholder="INSERT INTO ..." />
-            <marker date="1470903718000" expanded="true" signature="8291:8360" placeholder="insert into ..." />
-            <marker date="1470903718000" expanded="true" signature="8598:8652" placeholder="SELECT bookn..." />
-            <marker date="1470903718000" expanded="true" signature="8598:8657" placeholder="SELECT bookn..book..." />
+            <marker date="1470905808000" expanded="true" signature="8285:8362" placeholder="INSERT INTO ..." />
+            <marker date="1470905808000" expanded="true" signature="8285:8407" placeholder="INSERT INTO ..." />
+            <marker date="1470905808000" expanded="true" signature="8291:8360" placeholder="insert into ..." />
+            <marker date="1470905808000" expanded="true" signature="8598:8652" placeholder="SELECT bookn..." />
+            <marker date="1470905808000" expanded="true" signature="8598:8657" placeholder="SELECT bookn..book..." />
+            <marker date="1470905808000" expanded="true" signature="9313:9435" placeholder="INSERT INTO ..." />
+            <marker date="1470905808000" expanded="true" signature="9623:9682" placeholder="SELECT bookn..book..." />
           </folding>
         </state>
       </provider>

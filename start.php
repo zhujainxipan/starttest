@@ -414,6 +414,52 @@ foreach ($contact as $raw) {
     mysql_close($link);
     ?>
 
+    <hr>
+
+    <?php
+    // PDO测试
+
+    $dsn = "mysql:dbname=bookstore;host=127.0.0.1";
+    $user = "root";
+    $password = "admin";
+
+    try {
+        $dbh = new PDO($dsn, $user, $password);
+    } catch (PDOException $e) {
+        echo "数据库连接失败" . $e->getMessage();
+        exit;
+    }
+
+    // 插入数据
+    $insert1 = "INSERT INTO book(bookname,publisher,author,price,detail,publishdate) VALUES ('PHP','PHP','PHP','80.00','PHP','2016.08.11')";
+    $affected = $dbh->exec($insert1);
+
+    if ($affected) {
+        echo "数据库表中受影响的行数为：" . $affected;
+    } else {
+        print_r($dbh->errorInfo());
+    }
+
+    // 查询数据
+    $query1 = "SELECT bookname, author, publisher, price, detail FROM book";
+
+    try {
+        $pdoStatement = $dbh->query($query1);
+        echo '一共从表中查出' . $pdoStatement->rowCount() . "条记录<br>";
+        foreach ($pdoStatement as $row) {
+            echo $row['bookname'] . "\t";
+            echo $row['author'] . "\t";
+            echo $row['publisher'] . "\t";
+            echo $row['price'] . "\t";
+            echo $row['detail'] . "<br>";
+        }
+    } catch (PDOException $e) {
+        echo $e->getMessage();
+    }
+
+
+    ?>
+
 
 </center>
 
