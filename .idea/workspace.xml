@@ -25,22 +25,13 @@
       <file leaf-file-name="start.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/start.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.36858007">
-              <caret line="380" column="31" selection-start-line="380" selection-start-column="31" selection-end-line="380" selection-end-column="31" />
+            <state vertical-scroll-proportion="0.60120845">
+              <caret line="397" column="0" selection-start-line="397" selection-start-column="0" selection-end-line="397" selection-end-column="0" />
               <folding>
                 <element signature="e#1215#1230#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="upload.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/upload.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.0">
-              <caret line="52" column="1" selection-start-line="52" selection-start-column="1" selection-end-line="52" selection-end-column="1" />
-              <folding>
-                <element signature="e#6#96#0#PHP" expanded="true" />
+                <marker date="1470902811000" expanded="true" signature="8285:8362" placeholder="INSERT INTO ..." />
+                <marker date="1470902811000" expanded="true" signature="8285:8407" placeholder="INSERT INTO ..." />
+                <marker date="1470902811000" expanded="true" signature="8291:8360" placeholder="insert into ..." />
               </folding>
             </state>
           </provider>
@@ -60,6 +51,7 @@
         <option value="$PROJECT_DIR$/calendar.class.php" />
         <option value="$PROJECT_DIR$/test.class.php" />
         <option value="$PROJECT_DIR$/upload.php" />
+        <option value="$PROJECT_DIR$/conn.inc.php" />
         <option value="$PROJECT_DIR$/start.php" />
       </list>
     </option>
@@ -116,20 +108,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="starttest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="starttest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="starttest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="uploads" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -227,6 +205,9 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#1215#1230#0#PHP" expanded="true" />
+            <marker date="1470902811000" expanded="true" signature="8285:8362" placeholder="INSERT INTO ..." />
+            <marker date="1470902811000" expanded="true" signature="8285:8407" placeholder="INSERT INTO ..." />
+            <marker date="1470902811000" expanded="true" signature="8291:8360" placeholder="insert into ..." />
           </folding>
         </state>
       </provider>
@@ -237,6 +218,9 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#1215#1230#0#PHP" expanded="true" />
+            <marker date="1470902811000" expanded="true" signature="8285:8362" placeholder="INSERT INTO ..." />
+            <marker date="1470902811000" expanded="true" signature="8285:8407" placeholder="INSERT INTO ..." />
+            <marker date="1470902811000" expanded="true" signature="8291:8360" placeholder="insert into ..." />
           </folding>
         </state>
       </provider>
@@ -247,6 +231,9 @@
           <caret line="201" column="16" selection-start-line="201" selection-start-column="16" selection-end-line="201" selection-end-column="16" />
           <folding>
             <element signature="e#1215#1230#0#PHP" expanded="true" />
+            <marker date="1470902811000" expanded="true" signature="8285:8362" placeholder="INSERT INTO ..." />
+            <marker date="1470902811000" expanded="true" signature="8285:8407" placeholder="INSERT INTO ..." />
+            <marker date="1470902811000" expanded="true" signature="8291:8360" placeholder="insert into ..." />
           </folding>
         </state>
       </provider>
@@ -393,17 +380,36 @@
         <state vertical-scroll-proportion="-16.0">
           <caret line="52" column="1" selection-start-line="52" selection-start-column="1" selection-end-line="52" selection-end-column="1" />
           <folding>
-            <element signature="e#6#96#0#PHP" expanded="true" />
+            <element signature="e#6#96#0#PHP" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conn.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.0689654">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/mysql.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6797583">
+          <caret line="112" column="16" selection-start-line="112" selection-start-column="16" selection-end-line="112" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/start.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36858007">
-          <caret line="380" column="31" selection-start-line="380" selection-start-column="31" selection-end-line="380" selection-end-column="31" />
+        <state vertical-scroll-proportion="0.60120845">
+          <caret line="397" column="0" selection-start-line="397" selection-start-column="0" selection-end-line="397" selection-end-column="0" />
           <folding>
             <element signature="e#1215#1230#0#PHP" expanded="true" />
+            <marker date="1470902811000" expanded="true" signature="8285:8362" placeholder="INSERT INTO ..." />
+            <marker date="1470902811000" expanded="true" signature="8285:8407" placeholder="INSERT INTO ..." />
+            <marker date="1470902811000" expanded="true" signature="8291:8360" placeholder="insert into ..." />
           </folding>
         </state>
       </provider>

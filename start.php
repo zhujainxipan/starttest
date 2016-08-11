@@ -382,7 +382,22 @@ foreach ($contact as $raw) {
     echo mysql_get_server_info() . '<br>';
     echo mysql_get_client_info() . '<br>';
     echo mysql_stat() . '<br>';
-    mysql_close() . '<br>';
+
+    mysql_select_db('bookstore', $link) or die('不能选定数据库bookstore' . mysql_error());
+
+    // 插入数据
+    $insert = "INSERT INTO book(bookname,publisher,author,price,detail,publishdate) VALUES ('PHP','PHP','PHP','80.00','PHP','2016.08.11')";
+
+    $result = mysql_query($insert);
+
+    if ($result && mysql_affected_rows() > 0) {
+        echo '数据记录插入成功<br>';
+    } else {
+        echo '插入数据失败<br>';
+    }
+
+
+    mysql_close();
     ?>
 
 
