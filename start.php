@@ -347,6 +347,8 @@ foreach ($contact as $raw) {
 
 
     ?>
+    <hr>
+
     <!--以下为用户输入表单界面-->
     <form action="" method="post">
         用户名：<input type="text" size=30 name="username"><br>
@@ -354,6 +356,7 @@ foreach ($contact as $raw) {
         <textarea name="mess" rows="4" cols="38">请在这里输入留言信息</textarea>
         <input type="submit" name="sub1" value="留言">
     </form>
+    <hr>
 
     <p>文件上传测试</p>
 
@@ -362,6 +365,25 @@ foreach ($contact as $raw) {
         选择文件：<input type="file" name="myfile">
         <input type="submit" value="上传文件">
     </form>
+
+    <hr>
+    <p>数据库连接测试</p>
+
+    <?php
+    $link = mysql_connect('localhost', 'root', 'admin');
+    if (!$link) {
+        die('连接失败' . mysql_error());
+    }
+    echo "与mysql服务器建立连接成功<br>";
+
+    echo mysql_get_client_info() . '<br>';
+    echo mysql_get_host_info() . '<br>';
+    echo mysql_get_proto_info() . '<br>';
+    echo mysql_get_server_info() . '<br>';
+    echo mysql_get_client_info() . '<br>';
+    echo mysql_stat() . '<br>';
+    mysql_close() . '<br>';
+    ?>
 
 
 </center>
