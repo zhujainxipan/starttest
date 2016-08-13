@@ -86,6 +86,7 @@ echo "{$beer}飞回家<br>";
 
 // 数组的使用测试
 $arr = array("foo" => "bar", 12 => true);
+
 print_r($arr);
 echo $arr["foo"];
 echo $arr[12];
@@ -158,6 +159,7 @@ for ($raw = 0; $raw < count($contact); $raw++) {
     }
     echo "<br>";
 }
+
 
 // foreach测试
 echo "<br>";
@@ -460,6 +462,28 @@ foreach ($contact as $raw) {
 
     ?>
 
+    // 变量测试
+    <?php
+    $hi = 'hello';
+    $$hi = 'world';
+    echo $hello;
+    ?>
+
+    <?php
+    $insert1 = '131321323312';
+    echo $insert1 . '<br>';
+
+    $test = <<<EOT
+黄河之水天上来，\\\\\$ 奔流到海不复回，三千越甲可吞吴
+EOT;
+
+    echo $test."地方方式发生地方";
+
+    define("PI", 3.1415926);
+
+    
+
+    ?>
 
 </center>
 
