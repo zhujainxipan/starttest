@@ -481,7 +481,23 @@ EOT;
 
     define("PI", 3.1415926);
 
-    
+    $one = 200;
+    $two = 100;
+
+    function demo()
+    {
+        echo $one + $two;
+    }
+
+    function demo1()
+    {
+        global $one, $two;
+        echo $one + $two;
+    }
+
+    demo();
+    demo1();
+
 
     ?>
 
